@@ -5,8 +5,6 @@ import com.orhanobut.logger.DiskLogAdapter;
 import com.orhanobut.logger.Logger;
 import com.orhanobut.logger.PrettyFormatStrategy;
 
-import okhttp3.OkHttpClient;
-
 /**
  * Created by wuzy on 2018/06/26
  */
@@ -44,8 +42,6 @@ public class L {
         // crash log
         Thread.setDefaultUncaughtExceptionHandler(new CrashHandler());
     }
-
-
 
 
     public static void d(Object object) {
