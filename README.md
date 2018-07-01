@@ -46,3 +46,12 @@ L.d(map);
 L.e(new Throwable("error"));
 ```
 
+4、打印 OKHttp 网络日志：
+
+```java
+HttpLogInterceptor logger = new HttpLogInterceptor();
+logger.setLevel(HttpLogInterceptor.Level.BODY);
+OkHttpClient okHttpClient = new OkHttpClient.Builder()
+    .addInterceptor(logger)
+    .build();
+```

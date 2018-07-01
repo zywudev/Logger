@@ -45,7 +45,3 @@ publish {
     website = 'https://github.com/zywudev/Logger'//网站，不重要；尽量模拟github上的地址，例如我这样的；当然你有地址最好了
 }
 
-task javadoc(type: Javadoc) {
-    options.encoding = 'UTF-8'
-    source = 'src/main/java'
-}
